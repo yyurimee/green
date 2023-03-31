@@ -22,7 +22,7 @@ import com.cos.pet.dao.BoardsDAO;
 import com.cos.pet.model.Boards;
 
 @Controller
-//@RequestMapping("/pet")
+@RequestMapping("/pet")
 public class BoardsController {
 	final BoardsDAO dao;
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
