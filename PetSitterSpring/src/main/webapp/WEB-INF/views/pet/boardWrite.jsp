@@ -28,15 +28,15 @@
 					<option value="find_sitter">Find : Sitter</option>
 				</select>
 				<label class="form-label">제목</label>
-				<input type="text" name="board_title" class="form-control">
+				<input type="text" name="boardTitle" class="form-control">
 				<label class="form-label">작성자</label>
-				<input type="text" name="board_writer" class="form-control">
+				<input type="text" name="boardWriter" class="form-control">
 				<!-- 
 				<label class="form-label">이미지</label>
-				<input type="file" name="board_img" class="form-control">
+				<input type="file" name="boardImg" class="form-control">
 				 -->
 				<label class="form-label">내용</label>
-				<textarea cols="50" rows="5" name="board_content" class="form-control"></textarea>
+				<textarea cols="50" rows="5" name="boardContent" class="form-control"></textarea>
 				<button type="submit" class="button btnFade btnOrange">저장</button>
 			</form>
 		</div>

@@ -12,16 +12,16 @@
 </head>
    <body>
    <div class="container w-75 mt-5 mx-auto">
-    <h2>${boards.title}</h2>
+    <h2>${boards.boardTitle}</h2>
     <hr>
     <div class="card w-75 mx-auto">
 	    <!-- <img class="card-img-top" src="${boards.board_img}"> -->
 	    <div class="card-body">
-	    	<h4 class="card-title">Writer: ${boards.board_writer}</h4>
-	    	<p class="card-text">Date: ${boards.board_created_date}</p>
-	    	<p class="card-text">Content: ${boards.content}</p>
+	    	<h4 class="card-title">Writer: ${boards.boardWriter}</h4>
+	    	<p class="card-text">Date: ${boards.boardCreatedDate}</p>
+	    	<p class="card-text">Content: ${boards.boardContent}</p>
 	    </div>
-	    <a href="/news/delete/${boards.board_id}"><span class="badge bg-secondary">&times;</span></a>
+	    <a href="/news/delete/${boards.boardId}"><span class="badge bg-secondary">&times;</span></a>
     </div>
     <hr>
     <a href="javascript:history.back()" class="btn btn-primary"><< Back</a>

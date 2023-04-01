@@ -54,10 +54,10 @@ public class BoardsController {
 		return "redirect:/pet/list";
 	}
 	
-	@GetMapping("/delete/{board_id}")
-	public String deleteBoards(@PathVariable int board_id, Model m) {
+	@GetMapping("/delete/{boardId}")
+	public String deleteBoards(@PathVariable int boardId, Model m) {
 		try {
-			dao.delBoards(board_id);
+			dao.delBoards(boardId);
 		} catch(SQLException e) {
 			e.printStackTrace();
 			logger.warn("게시글 삭제 과정에서 문제 발생!!");
@@ -80,10 +80,10 @@ public class BoardsController {
 		return "pet/boardList";
 	}
 	
-	@GetMapping("/{board_id}")
-	public String getBoards(@PathVariable int board_id, Model m) {
+	@GetMapping("/{boardId}")
+	public String getBoards(@PathVariable int boardId, Model m) {
 		try {
-			Boards b = dao.getBoards(board_id);	//경로 파라미터 방식으로 요청 진행
+			Boards b = dao.getBoards(boardId);	//경로 파라미터 방식으로 요청 진행
 			m.addAttribute("boards", b);
 		} catch(SQLException e) {
 			e.printStackTrace();

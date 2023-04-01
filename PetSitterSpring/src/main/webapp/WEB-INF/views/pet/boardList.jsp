@@ -61,11 +61,11 @@
 			<div class="clear"></div>
 				<ul>
 					<c:forEach var="boards" items="${boardslist}" varStatus="status">
-					<a href="boards.nhn?action=getBoards&board_id=${boards.board_id}" class="text-decoration-none"><li>
-						<div class="subject">[${status.count}] ${boards.title}</div>
-						<div class="writer">${boards.board_writer}</div>
+					<a href="boards.nhn?action=getBoards&board_id=${boards.boardId}" class="text-decoration-none"><li>
+						<div class="subject">[${status.count}] ${boards.boardTitle}</div>
+						<div class="writer">${boards.boardWriter}</div>
 						<div class="clear"></div>
-						<div class="date">${boards.board_created_date}</div></a>
+						<div class="date">${boards.boardCreatedDate}</div></a>
 					</li>
 					<hr>
 					</c:forEach>
